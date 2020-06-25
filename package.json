@@ -1,5 +1,5 @@
 {
-  "name": "katia-jozyedit",
+  "name": "katia-client",
   "version": "1.0.0",
   "private": true,
   "contributors": [
@@ -47,7 +47,7 @@
     ]
   },
   "optionalDependencies": {
-    "fsevents": "^1.2.11"
+    "fsevents": "^1.2.13"
   },
   "devDependencies": {
     "react-test-renderer": "^16.13.1"
