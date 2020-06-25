@@ -1,7 +1,7 @@
 .main__Animate-div {
     position: relative;
     z-index: 1;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -48,10 +48,13 @@
     margin: 0;
 }
 
+.Swipeable__div {
+    /* background-color: black; */
+}
+
 .main__Swipe-User {
-    position: relative;
-    min-height: 75vh;
-    height: 83vh;
+    width: auto;
+    height: 70vh;
     max-height: 78vh;
     display: flex;
     flex-direction: column;
@@ -59,8 +62,7 @@
     margin: 0 auto;
     border-radius: 2.5vh;
     background: white;
-    box-shadow: .5rem 1rem .8rem #888888;
-    border: .1rem solid lightgrey;
+    box-shadow: .5rem 1rem 1.8rem #888888;
 }
 
 .main__Swipe-User:hover {
@@ -240,9 +242,16 @@
     background: #30CFD0;
 }
 
+@media screen and (min-width: 400px) {
+    .main__Swipe-User {
+        max-width: 56vh;
+    }
+}
+
 @media screen and (min-width: 600px) {
     .main__Swipe-User {
-        height: 70vh;
+        height: 75vh;
+        max-width: 56vh;
     }
     .main__Animate-div, .main__Nav, .main__Second-Nav, .main__Swipe-User-null {
         max-width: 70%;
@@ -250,9 +259,6 @@
 }
 
 @media screen and (min-width: 900px) {
-    .main__Swipe-User {
-        height: 55vh;
-    }
     .main__Animate-div, .main__Nav, .main__Second-Nav, .main__Swipe-User-null {
         max-width: 55%;
     }
@@ -292,8 +298,7 @@
 
 @media screen and (min-width: 1080px) {
     .main__Swipe-User {
-        height: 52vh;
-        width: 565px;
+        width: 56vh;
     }
     .main__Swipe-User-null {
         width: 565px;

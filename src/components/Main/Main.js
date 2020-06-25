@@ -22,7 +22,7 @@ export default class MainPage extends React.Component {
         queue: null,
         expanded: false,
         error: null,
-        loading: false, // will be implemented when we add loading after swipe
+        loading: false,
     }
 
     static contextType = UserContext;
