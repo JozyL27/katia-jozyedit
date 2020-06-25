@@ -1,0 +1,307 @@
+.main__Animate-div {
+    position: relative;
+    z-index: 1;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.main__Swipe {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.main__Nav {
+    width: 80%;
+    height: 7vh;
+    max-height: 7rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 1vh 0;
+    margin: 0 auto;
+}
+
+.main__profile-button {
+    height: 5vh;
+    max-height: 5rem;
+}
+
+.main__contacts-button {
+    height: 5vh;
+    max-height: 5rem;
+}
+
+.main__Image {
+    height: 15vh;
+    width: auto;
+    max-width: 80%;
+    margin: 1.5vh 0;
+    border-radius: 2.5vh;
+    transition: height .6s;
+    transition-timing-function: ease-in-out;
+}
+
+.main__hidden-img {
+    height: 0;
+    margin: 0;
+}
+
+.main__Swipe-User {
+    position: relative;
+    min-height: 75vh;
+    height: 83vh;
+    max-height: 78vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 2.5vh;
+    background: white;
+    box-shadow: .5rem 1rem .8rem #888888;
+    border: .1rem solid lightgrey;
+}
+
+.main__Swipe-User:hover {
+    cursor: pointer;
+}
+
+.main__display-name {
+    font-size: 5vh;
+    margin: 1vh 0;
+    max-width: 100%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.main__bottom-card {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    padding-bottom: 4vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.main__card-header {
+    width: 70%;
+    font-size: 4vh;
+    font-weight: bold;
+    padding: .8vh 2vw;
+    margin: .8vh 0;
+    transition: font-size .5s, height .5s, background-color .5s;
+    transition-timing-function: ease-in-out;
+    transition-delay: .1s;
+
+    border: none;
+    border-bottom: .2rem solid lightgrey;
+    text-align: center;
+    color: black;
+}
+
+.main__bottom-card > span {
+    font-size: 3.5vh;
+    padding: .2vh 0;
+}
+
+.main__bottom-card > .lfm-in {
+    font-size: 3.5vh;
+    color: black;
+}
+
+.main__platforms {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.main__xbox, .main__playstation, .main__nintendo, .main__PC {
+    height: 6vh;
+}
+
+.main__none {
+    font-size: 4vh;
+}
+
+.main__genres {
+    text-align: center;
+    color: black;
+}
+
+.main__bio {
+    font-size: 3.5vh;
+    text-align: center;
+    padding: 0 1vw;
+    max-height: 17vh;
+    transition: font-size .5s, height .5s, background-color .5s;
+    transition-timing-function: ease-in-out;
+    transition-delay: .1s;
+    color: black;
+    overflow-y: auto;
+}
+
+.main__hidden-text {
+    font-size: 0;
+    padding: 0;
+    margin: 0;
+    height: 0;
+    transition-delay: 0s;
+    border: none;
+}
+
+.main__caret-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main__down-caret {
+    position: absolute;
+    bottom: 0.75vh;
+    height: 2.5vh;
+    transition: transform .5s;
+    transition-timing-function: ease-in-out;
+}
+
+.reverse {
+    transform: rotateX(180deg);
+}
+
+.main__Second-Nav {
+    width: 80%;
+    height: 10vh;
+    max-height: 12rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    padding: 1vh;
+}
+
+.main__x {
+    height: 8vh;
+    max-height: 10rem;
+}
+
+.main__x:hover {
+    cursor: pointer;
+}
+
+.main__check {
+    height: 8vh;
+    max-height: 10rem;
+}
+
+.main__check:hover {
+    cursor: pointer;
+}
+
+.main__Swipe-User-null {
+    position: relative;
+    min-height: 75vh;
+    height: 83vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: .1rem solid lightgray;
+    box-shadow: .5rem 1rem .8rem #888888;
+    max-width: 80%;
+    margin: 0 auto;
+    border-radius: 2.5vh;
+}
+
+.main__card-null {
+    max-width: 80%;
+    font-size: 5vh;
+    text-align: center;
+}
+
+
+.minViewInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    margin-top: -.2rem;
+    width: calc(100% + .4rem);
+    border-radius: 2.5vh;
+    padding: .5rem;
+    background-color: white;
+    box-shadow: 0 .8rem .8rem #888888;
+    background: #30CFD0;
+}
+
+@media screen and (min-width: 600px) {
+    .main__Swipe-User {
+        height: 70vh;
+    }
+    .main__Animate-div, .main__Nav, .main__Second-Nav, .main__Swipe-User-null {
+        max-width: 70%;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .main__Swipe-User {
+        height: 55vh;
+    }
+    .main__Animate-div, .main__Nav, .main__Second-Nav, .main__Swipe-User-null {
+        max-width: 55%;
+    }
+
+    .main__display-name {
+        font-size: 4rem;
+    }
+
+    .main__card-header {
+        font-size: 2.8rem;
+    }
+
+    .main__bottom-card > span {
+        font-size: 2.8rem;
+    }
+
+    .main__bottom-card > .lfm-in {
+        font-size: 2.8rem;
+    }
+
+    .main__xbox, .main__playstation, .main__nintendo, .main__PC {
+        height: 5.5rem;
+    }
+    
+    .main__none {
+        font-size: 2.8rem;
+    }
+
+    .main__bio {
+        font-size: 2.8rem;
+    }
+
+    .main__hidden-text {
+        font-size: 0;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    .main__Swipe-User {
+        height: 52vh;
+        width: 565px;
+    }
+    .main__Swipe-User-null {
+        width: 565px;
+    }
+}
+
+@media screen and (min-width: 1385px) {
+    .main__Swipe-User {
+        height: 715px;
+    }
+}

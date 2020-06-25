@@ -1,0 +1,148 @@
+.chat__main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.chat__nav {
+  height: 13vmin;
+  max-height: 11rem;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 1rem .8rem #888888;
+  border: none;
+  box-shadow: 0 .8rem .8rem #888888;
+}
+
+.chat__back {
+  position: fixed;
+  top: 1.8vh;
+  left: 1.8vw;
+  width: auto;
+  height: 7vmin;
+  max-height: 6rem;
+}
+
+.chat__chatting-with {
+  font-size: 6.5vmin;
+  font-weight: bold;
+  max-width: 70vmin;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: black;
+}
+
+.chat__message-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+  min-height: calc(100vh - 28vmin);
+  overflow-y: auto;
+  padding: 2vh 3vw 0 3vw;
+}
+
+.chat__message-container > :first-child {
+  margin-top: auto;
+}
+
+.chat__none {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chat__none-message {
+  width: 75%;
+  font-size: 3vmax;
+  text-align: center;
+}
+
+.chat__message {
+  display: flex;
+  align-items: flex-end;
+  min-height: 8vmin;
+  margin: 1vmin;
+  width: 100%;
+}
+
+.chat__user-message {
+  justify-content: flex-end;
+}
+
+.chat__message-text {
+  position: relative;
+  z-index: -1;
+  font-size: 3.5vmin;
+  padding: 2vmin 1vmin;
+  border-radius: 1vmin;
+  margin: 0 1vmin;
+  max-width: 87vw;
+}
+
+.chat__user-message-text {
+  background-color: rgb(161, 211, 228);
+}
+
+.chat__partner-message-text {
+  background-color: rgb(80, 194, 80);
+}
+
+.chat__avatar {
+  position: relative;
+  z-index: -1;
+  width: auto;
+  height: 8vmin;
+}
+
+.chat__message-form {
+  background-color: white;
+  height: 15vmin;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 1vmin;
+}
+
+.chat__message-form > * {
+  font-size: 5vmin;
+}
+
+.chat__input {
+  width: 85vw;
+  height: 10vmin;
+  resize: none;
+  padding: .5vmin;
+  border-radius: 1vmin;
+}
+
+.chat__send {
+  width: 9vmin;
+  height: auto;
+}
+
+.chat__send:hover {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 900px) {
+  .chat__chatting-with {
+    font-size: 30px;
+  }
+
+  .chat__none-message {
+    font-size: 20px;
+  }
+
+  .chat__back {
+    height: 40px;
+    margin-top: 5px;
+  }
+}

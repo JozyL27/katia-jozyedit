@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LandingRoute /> renders the UI as expected 1`] = `
+<main
+  id="lp__main-flex"
+>
+  <a
+    className="lp__login blue-button"
+    href="/login"
+    onClick={[Function]}
+  >
+    Login
+  </a>
+  <div
+    id="lp__container"
+  >
+    <h1
+      className="lp__logoContainer"
+    >
+      <a
+        className="lp__lp-link"
+        href="/"
+        onClick={[Function]}
+      >
+        Katia
+      </a>
+    </h1>
+    <div
+      className="separator"
+    />
+    <h2
+      className="lp__header"
+    >
+      Find new teammates. Squad up.
+    </h2>
+    <p
+      className="lp__about-para"
+    >
+      Katia is a social media application made for gamers by gamers. Quickly and easily find others who share the same games and platforms as you.
+    </p>
+    <a
+      className="blue-button blue-button-margin"
+      href="/signup"
+      onClick={[Function]}
+    >
+      Signup
+    </a>
+  </div>
+</main>
+`;

@@ -1,0 +1,104 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Login /> renders the UI as expected 1`] = `
+<main
+  id="lp__main-flex"
+>
+  <div
+    className="lp__logoContainer"
+  >
+    <a
+      className="lp__lp-link"
+      href="/"
+      onClick={[Function]}
+    >
+      Katia
+    </a>
+  </div>
+  <section
+    className="Login__container"
+  >
+    <h2
+      className="Login__header"
+    >
+      Login
+    </h2>
+    <form
+      className="Login__form"
+      onSubmit={[Function]}
+    >
+      <div
+        role="alert"
+      />
+      <div
+        className="Login__email-div lp__input-div"
+      >
+        <label
+          className="lp__label"
+          htmlFor="Login__email"
+        >
+          Email
+        </label>
+        <input
+          className="lp__input"
+          id="Login__email"
+          name="email"
+          required={true}
+        />
+      </div>
+      <div
+        className="Login__password-div lp__input-div"
+      >
+        <label
+          className="lp__label"
+          htmlFor="Login__password"
+        >
+          Password
+        </label>
+        <input
+          className="lp__input"
+          id="Login__password"
+          name="password"
+          required={true}
+          type="password"
+        />
+      </div>
+      <button
+        className="blue-button blue-button-margin"
+        type="submit"
+      >
+        Login
+      </button>
+      <div
+        className="Login__submit-button-div"
+      >
+        <p
+          className="Login__or"
+        >
+          Need an account?
+        </p>
+        <a
+          className="Login__signup-link"
+          href="/signup"
+          onClick={[Function]}
+        >
+          Sign Up
+        </a>
+      </div>
+    </form>
+    <div
+      className="demoContainer"
+    >
+      <h3>
+        Demo account
+      </h3>
+      <span>
+        Email: user@demo.com
+      </span>
+      <span>
+        Password: #Password60
+      </span>
+    </div>
+  </section>
+</main>
+`;

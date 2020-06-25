@@ -1,0 +1,43 @@
+.Login__container {
+  width: 70%;
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 1rem 1rem 2rem;
+}
+
+.Login__header {
+  margin: 1.5rem 0 2rem;
+  font-size: 3rem;
+}
+
+.Login__submit-button-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.Login__signup-link {
+  font-weight: bolder;
+  color: rgb(48, 100, 153);
+  cursor: pointer;
+  font-size: 2.25rem;
+  margin: 0 auto;
+}
+
+.Login__or {
+  font-size: 2rem;
+  margin: .75rem 0;
+}
+
+.demoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+
+#Login__email, #Login__password {
+  border-radius: 0;
+  -webkit-border-radius:0px;
+}
