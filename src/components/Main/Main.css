@@ -19,7 +19,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding: 1vh 0;
+    padding: 3vh 0;
     margin: 0 auto;
 }
 
@@ -207,16 +207,14 @@
 }
 
 .main__Swipe-User-null {
-    position: relative;
     min-height: 75vh;
-    height: 83vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: .1rem solid lightgray;
-    box-shadow: .5rem 1rem .8rem #888888;
-    max-width: 80%;
+    box-shadow: .5rem 1rem 1.8rem #888888;
+    max-width: 93%;
     margin: 0 auto;
     border-radius: 2.5vh;
 }
@@ -246,11 +244,15 @@
     .main__Swipe-User {
         max-width: 56vh;
     }
+
+    .main__Nav {
+        padding: 1vh 0;
+    }
 }
 
 @media screen and (min-width: 600px) {
     .main__Swipe-User {
-        height: 75vh;
+        height: 78vh;
         max-width: 56vh;
     }
     .main__Animate-div, .main__Nav, .main__Second-Nav, .main__Swipe-User-null {
