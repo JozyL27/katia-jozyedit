@@ -36,13 +36,34 @@
 }
 
 .main__Image {
-    height: 15vh;
-    width: auto;
-    max-width: 80%;
-    margin: 1.5vh 0;
+    /* height: auto;
+    max-width: 100%; */
+    /* width: auto; */
+    /* max-width: 80%; */
+    /* margin: 1.5vh 0; */
+    /* border-radius: 2.5vh; */
+    /* transition: height .6s; */
+    /* transition-timing-function: ease-in-out; */
+    /* box-shadow: 0 .8rem .8rem #888888; */
+    /* width: calc(100% + .1rem); */
+    /* margin-top: -.2rem; */
+    /* image-rendering: pixelated; */
+}
+
+.minViewInfo {
+    align-items: center;
+    border: none;
+    margin: 0 auto;
+    margin-top: -.2rem;
+    /* width: calc(100% + .01rem); */
+    width: 100%;
     border-radius: 2.5vh;
-    transition: height .6s;
-    transition-timing-function: ease-in-out;
+    padding: .5rem;
+    box-shadow: 0 .8rem .8rem #888888;
+    height: 200vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .main__hidden-img {
@@ -67,18 +88,29 @@
     box-shadow: .5rem 1rem 1.8rem #888888;
 }
 
+/* .main__Swipe-User {
+    width: auto;
+    height: 70vh;
+    max-height: 78vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 2.5vh;
+    background: white;
+    box-shadow: .5rem 1rem 1.8rem #888888;
+} */
+
 .main__Swipe-User:hover {
     cursor: pointer;
 }
 
 .main__display-name {
-    font-size: 5vh;
-    margin: 1vh 0;
+    font-size: 2.8vh;
+    margin: 2vh auto 0px auto;
     max-width: 100%;
     text-align: center;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    font-weight: bold;
 }
 
 .main__bottom-card {
@@ -97,7 +129,7 @@
 
 .main__card-header {
     width: 70%;
-    font-size: 4vh;
+    font-size: 2.2vh;
     font-weight: bold;
     padding: .8vh 2vw;
     margin: .8vh 0;
@@ -108,27 +140,28 @@
     border: none;
     border-bottom: .2rem solid lightgrey;
     text-align: center;
-    color: black;
+    color: grey;
 }
 
 .main__bottom-card > span {
-    font-size: 3.5vh;
+    font-size: 2vh;
     padding: .2vh 0;
 }
 
 .main__bottom-card > .lfm-in {
-    font-size: 3.5vh;
+    font-size: 2vh;
     color: black;
 }
 
 .main__platforms {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    margin-top: 5px;
 }
 
 .main__xbox, .main__playstation, .main__nintendo, .main__PC {
-    height: 6vh;
+    height: 4vh;
 }
 
 .main__none {
@@ -141,7 +174,7 @@
 }
 
 .main__bio {
-    font-size: 3.5vh;
+    font-size: 2vh;
     text-align: center;
     padding: 0 1vw;
     max-height: 17vh;
@@ -150,6 +183,7 @@
     transition-delay: .1s;
     color: black;
     overflow-y: auto;
+    max-width: 90%;
 }
 
 .main__hidden-text {
@@ -170,7 +204,7 @@
 .main__down-caret {
     position: absolute;
     bottom: 0.75vh;
-    height: 2.5vh;
+    height: 2vh;
     transition: transform .5s;
     transition-timing-function: ease-in-out;
 }
@@ -229,7 +263,7 @@
 }
 
 
-.minViewInfo {
+/* .minViewInfo {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -241,7 +275,7 @@
     background-color: white;
     box-shadow: 0 .8rem .8rem #888888;
     background: #30CFD0;
-}
+} */
 
 @media screen and (min-width: 400px) {
     .main__Swipe-User {
