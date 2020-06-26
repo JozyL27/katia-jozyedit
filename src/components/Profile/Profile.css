@@ -6,11 +6,11 @@
     height: 9vh;
     max-height: 7rem; 
     width: 85%;
-    margin: 0 auto .75rem;
+    margin: 20px auto 20px auto;
 }
 
-.profile__edit-icon {
-    height: 7vh;
+.profile__back-icon, .profile__edit-icon {
+    height: 5vh;
     max-height: 5rem;
 }
 
@@ -18,23 +18,16 @@
     cursor: pointer;
 }
 
-.profile__back-icon {
-    height: 7vh;
-    max-height: 5rem;
-}
-
 .profile__section {
-    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: .1rem solid lightgrey;
-    max-width: 85%;
+    max-width: 92%;
     margin: 0 auto;
     border-radius: 2.5vh;
     background-color: white;
-    box-shadow: .5rem 1rem .8rem #888888;
+    box-shadow: .5rem 1rem 1.8rem #888888;
 }
 
 .profile__section > * {
@@ -323,6 +316,11 @@
 
     .profile__section > * {
         font-size: 3vh;
+    }
+
+    .profile__back-icon, .profile__edit-icon {
+        height: 7vh;
+        max-height: 5rem;
     }
 }
 
