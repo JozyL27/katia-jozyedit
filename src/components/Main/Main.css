@@ -13,14 +13,16 @@
 }
 
 .main__Nav {
-    width: 80%;
+    /* width: 80%; */
+    width: 100%;
     height: 7vh;
     max-height: 7rem;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding: 3vh 0;
+    padding: 3.3vh 0;
     margin: 0 auto;
+    /* margin: 20px auto 0px auto; */
 }
 
 .main__profile-button {
@@ -178,7 +180,8 @@
 }
 
 .main__Second-Nav {
-    width: 80%;
+    /* width: 80%; */
+    width: 100%;
     height: 10vh;
     max-height: 12rem;
     display: flex;
