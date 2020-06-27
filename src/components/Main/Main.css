@@ -13,7 +13,6 @@
 }
 
 .main__Nav {
-    /* width: 80%; */
     width: 100%;
     height: 7vh;
     max-height: 7rem;
@@ -22,7 +21,6 @@
     justify-content: space-evenly;
     padding: 3.3vh 0;
     margin: 0 auto;
-    /* margin: 20px auto 0px auto; */
 }
 
 .main__profile-button {
@@ -35,27 +33,11 @@
     max-height: 5rem;
 }
 
-.main__Image {
-    /* height: auto;
-    max-width: 100%; */
-    /* width: auto; */
-    /* max-width: 80%; */
-    /* margin: 1.5vh 0; */
-    /* border-radius: 2.5vh; */
-    /* transition: height .6s; */
-    /* transition-timing-function: ease-in-out; */
-    /* box-shadow: 0 .8rem .8rem #888888; */
-    /* width: calc(100% + .1rem); */
-    /* margin-top: -.2rem; */
-    /* image-rendering: pixelated; */
-}
-
 .minViewInfo {
     align-items: center;
     border: none;
     margin: 0 auto;
     margin-top: -.2rem;
-    /* width: calc(100% + .01rem); */
     width: 100%;
     border-radius: 2.5vh;
     padding: .5rem;
@@ -71,10 +53,6 @@
     margin: 0;
 }
 
-.Swipeable__div {
-    /* background-color: black; */
-}
-
 .main__Swipe-User {
     width: auto;
     height: 70vh;
@@ -87,19 +65,6 @@
     background: white;
     box-shadow: .5rem 1rem 1.8rem #888888;
 }
-
-/* .main__Swipe-User {
-    width: auto;
-    height: 70vh;
-    max-height: 78vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-    border-radius: 2.5vh;
-    background: white;
-    box-shadow: .5rem 1rem 1.8rem #888888;
-} */
 
 .main__Swipe-User:hover {
     cursor: pointer;
@@ -157,7 +122,7 @@
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    margin-top: 5px;
+    margin-top: 3px;
 }
 
 .main__xbox, .main__playstation, .main__nintendo, .main__PC {
@@ -176,7 +141,6 @@
 .main__bio {
     font-size: 2vh;
     text-align: center;
-    padding: 0 1vw;
     max-height: 17vh;
     transition: font-size .5s, height .5s, background-color .5s;
     transition-timing-function: ease-in-out;
@@ -184,6 +148,7 @@
     color: black;
     overflow-y: auto;
     max-width: 90%;
+    margin: 0 auto;
 }
 
 .main__hidden-text {
@@ -214,7 +179,6 @@
 }
 
 .main__Second-Nav {
-    /* width: 80%; */
     width: 100%;
     height: 10vh;
     max-height: 12rem;
@@ -262,21 +226,6 @@
     text-align: center;
 }
 
-
-/* .minViewInfo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: none;
-    margin-top: -.2rem;
-    width: calc(100% + .4rem);
-    border-radius: 2.5vh;
-    padding: .5rem;
-    background-color: white;
-    box-shadow: 0 .8rem .8rem #888888;
-    background: #30CFD0;
-} */
-
 @media screen and (min-width: 400px) {
     .main__Swipe-User {
         max-width: 56vh;
@@ -295,31 +244,27 @@
     .main__Animate-div, .main__Nav, .main__Second-Nav, .main__Swipe-User-null {
         max-width: 70%;
     }
-}
 
-@media screen and (min-width: 900px) {
-    .main__Animate-div, .main__Nav, .main__Second-Nav, .main__Swipe-User-null {
-        max-width: 55%;
-    }
 
+    /* experimental */
     .main__display-name {
-        font-size: 4rem;
+        font-size: 2.7rem;
     }
 
     .main__card-header {
-        font-size: 2.8rem;
+        font-size: 2.2rem;
     }
 
     .main__bottom-card > span {
-        font-size: 2.8rem;
+        font-size: 2.2rem;
     }
 
     .main__bottom-card > .lfm-in {
-        font-size: 2.8rem;
+        font-size: 2.2rem;
     }
 
     .main__xbox, .main__playstation, .main__nintendo, .main__PC {
-        height: 5.5rem;
+        height: 4rem;
     }
     
     .main__none {
@@ -327,11 +272,17 @@
     }
 
     .main__bio {
-        font-size: 2.8rem;
+        font-size: 2.2rem;
     }
 
     .main__hidden-text {
         font-size: 0;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .main__Animate-div, .main__Nav, .main__Second-Nav, .main__Swipe-User-null {
+        max-width: 55%;
     }
 }
 

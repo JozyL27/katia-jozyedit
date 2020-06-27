@@ -142,9 +142,9 @@ export default class MainPage extends React.Component {
                             <p className='main__bio main__hidden-text'>{user.bio}</p></>)}
 
                             {/* carrot svg */}
-                            <div className='main__caret-container'>
+                            {/* <div className='main__caret-container'>
                             <input className={`main__down-caret${this.state.expanded ? ' reverse' : ''}`} type="image" src={down_caretSVG} alt='down-caret' />
-                            </div>
+                            </div> */}
 
                     </section>
                 </div>
