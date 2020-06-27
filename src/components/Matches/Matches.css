@@ -54,8 +54,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 80%;
-    margin: auto;
+    width: 92%;
+    margin: 0px auto 30px auto;
 }
 
 .matches__li {
@@ -64,11 +64,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 1vmax 0;
+    margin: 1.3vmax 0;
     background: white;
     border-radius: .8vmax;
     width: 100%;
-    box-shadow: .5rem 1rem .8rem #888888;
+    box-shadow: .5rem 1rem 1.8rem #888888;
 }
 
 .matches__avatar {

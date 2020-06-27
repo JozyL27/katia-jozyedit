@@ -105,13 +105,16 @@ export default class MainPage extends React.Component {
             <Swipeable {...handlers} className='Swipeable__div'>
                 <Animate>
                 <div className='main__Swipe-User' onClick={this.toggleExpanded} aria-live='polite'>
-                    <section className='minViewInfo'>
+                    {/* <section className='minViewInfo'>
                     {this.state.expanded ? (<img src={user.avatar} alt='avatar' 
                     className='main__Image main__hidden-img' />) : 
                     (<img src={user.avatar} alt='avatar' className='main__Image' />)}
-                    <h3 className='main__display-name'>{user.display_name}</h3>
-                    </section>
+                    </section> */}
+                    {!this.state.expanded ? 
+                    <section className='minViewInfo' style={{backgroundImage: `url(${user.avatar})`}}>
+                    </section> : null}
                     <section className='main__bottom-card'>
+                        <h3 className='main__display-name'>{user.display_name}</h3>
                         <h4 className='main__card-header'>Platforms</h4>
                         <div className='main__platforms'>
                             {user.platforms.length === 0 ? <p className='main__none'>None</p> : null}
@@ -120,8 +123,15 @@ export default class MainPage extends React.Component {
                             {user.platforms.includes("Xbox") ? <img className='main__xbox' src={xboxLogo} alt='Xbox logo' /> : null}
                             {user.platforms.includes("PlayStation") ? <img className='main__playstation' src={playstationLogo} alt='Playstation logo' /> : null}
                         </div>
-                        <h4 className='main__card-header'>LFM</h4>
+
+                        {this.state.expanded ?
+                        <>
+                            <h4 className='main__card-header'>LFM</h4>
                             {this.context.generateLfmElements(user.lfm_in)}
+                        </>
+                        : null
+                        }
+
                         {this.state.expanded ? (<>
                             <h4 className='main__card-header'>Genres</h4>
                             <span className='main__genres'>{this.context.generateGenreString(user.genres)}</span>
@@ -130,9 +140,12 @@ export default class MainPage extends React.Component {
                             :
                             (<><h4 className='main__card-header main__hidden-text'>Bio</h4>
                             <p className='main__bio main__hidden-text'>{user.bio}</p></>)}
-                        <div className='main__caret-container'>
+
+                            {/* carrot svg */}
+                            {/* <div className='main__caret-container'>
                             <input className={`main__down-caret${this.state.expanded ? ' reverse' : ''}`} type="image" src={down_caretSVG} alt='down-caret' />
-                        </div>
+                            </div> */}
+
                     </section>
                 </div>
                 </Animate>

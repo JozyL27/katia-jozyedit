@@ -13,13 +13,13 @@
 }
 
 .main__Nav {
-    width: 80%;
+    width: 100%;
     height: 7vh;
     max-height: 7rem;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding: 3vh 0;
+    padding: 3.3vh 0;
     margin: 0 auto;
 }
 
@@ -33,23 +33,24 @@
     max-height: 5rem;
 }
 
-.main__Image {
-    height: 15vh;
-    width: auto;
-    max-width: 80%;
-    margin: 1.5vh 0;
+.minViewInfo {
+    align-items: center;
+    border: none;
+    margin: 0 auto;
+    margin-top: -.2rem;
+    width: 100%;
     border-radius: 2.5vh;
-    transition: height .6s;
-    transition-timing-function: ease-in-out;
+    padding: .5rem;
+    box-shadow: 0 .8rem .8rem #888888;
+    height: 200vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .main__hidden-img {
     height: 0;
     margin: 0;
-}
-
-.Swipeable__div {
-    /* background-color: black; */
 }
 
 .main__Swipe-User {
@@ -70,13 +71,11 @@
 }
 
 .main__display-name {
-    font-size: 5vh;
-    margin: 1vh 0;
+    font-size: 2.8vh;
+    margin: 2vh auto 0px auto;
     max-width: 100%;
     text-align: center;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    font-weight: bold;
 }
 
 .main__bottom-card {
@@ -95,7 +94,7 @@
 
 .main__card-header {
     width: 70%;
-    font-size: 4vh;
+    font-size: 2.2vh;
     font-weight: bold;
     padding: .8vh 2vw;
     margin: .8vh 0;
@@ -106,27 +105,28 @@
     border: none;
     border-bottom: .2rem solid lightgrey;
     text-align: center;
-    color: black;
+    color: grey;
 }
 
 .main__bottom-card > span {
-    font-size: 3.5vh;
+    font-size: 2vh;
     padding: .2vh 0;
 }
 
 .main__bottom-card > .lfm-in {
-    font-size: 3.5vh;
+    font-size: 2vh;
     color: black;
 }
 
 .main__platforms {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    margin-top: 3px;
 }
 
 .main__xbox, .main__playstation, .main__nintendo, .main__PC {
-    height: 6vh;
+    height: 4vh;
 }
 
 .main__none {
@@ -139,15 +139,16 @@
 }
 
 .main__bio {
-    font-size: 3.5vh;
+    font-size: 2vh;
     text-align: center;
-    padding: 0 1vw;
     max-height: 17vh;
     transition: font-size .5s, height .5s, background-color .5s;
     transition-timing-function: ease-in-out;
     transition-delay: .1s;
     color: black;
     overflow-y: auto;
+    max-width: 90%;
+    margin: 0 auto;
 }
 
 .main__hidden-text {
@@ -168,7 +169,7 @@
 .main__down-caret {
     position: absolute;
     bottom: 0.75vh;
-    height: 2.5vh;
+    height: 2vh;
     transition: transform .5s;
     transition-timing-function: ease-in-out;
 }
@@ -178,7 +179,7 @@
 }
 
 .main__Second-Nav {
-    width: 80%;
+    width: 100%;
     height: 10vh;
     max-height: 12rem;
     display: flex;
@@ -225,21 +226,6 @@
     text-align: center;
 }
 
-
-.minViewInfo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: none;
-    margin-top: -.2rem;
-    width: calc(100% + .4rem);
-    border-radius: 2.5vh;
-    padding: .5rem;
-    background-color: white;
-    box-shadow: 0 .8rem .8rem #888888;
-    background: #30CFD0;
-}
-
 @media screen and (min-width: 400px) {
     .main__Swipe-User {
         max-width: 56vh;
@@ -258,31 +244,27 @@
     .main__Animate-div, .main__Nav, .main__Second-Nav, .main__Swipe-User-null {
         max-width: 70%;
     }
-}
 
-@media screen and (min-width: 900px) {
-    .main__Animate-div, .main__Nav, .main__Second-Nav, .main__Swipe-User-null {
-        max-width: 55%;
-    }
 
+    /* experimental */
     .main__display-name {
-        font-size: 4rem;
+        font-size: 2.7rem;
     }
 
     .main__card-header {
-        font-size: 2.8rem;
+        font-size: 2.2rem;
     }
 
     .main__bottom-card > span {
-        font-size: 2.8rem;
+        font-size: 2.2rem;
     }
 
     .main__bottom-card > .lfm-in {
-        font-size: 2.8rem;
+        font-size: 2.2rem;
     }
 
     .main__xbox, .main__playstation, .main__nintendo, .main__PC {
-        height: 5.5rem;
+        height: 4rem;
     }
     
     .main__none {
@@ -290,11 +272,17 @@
     }
 
     .main__bio {
-        font-size: 2.8rem;
+        font-size: 2.2rem;
     }
 
     .main__hidden-text {
         font-size: 0;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .main__Animate-div, .main__Nav, .main__Second-Nav, .main__Swipe-User-null {
+        max-width: 55%;
     }
 }
 
