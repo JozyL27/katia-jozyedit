@@ -10,9 +10,10 @@
 }
 
 .matches__back-icon {
-    height: 4vmax;
+    height: 3.5vmax;
     max-height: 5rem;
-    margin: .5vmax 0;
+    /* margin: .5vmax 0; */
+    margin-top: 20px;
 }
 
 .matches__header-container {
