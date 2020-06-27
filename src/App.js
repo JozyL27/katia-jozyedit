@@ -55,7 +55,7 @@ class App extends Component {
             path='/matches'
             component={Matches}
           />
-          <PrivateRoute
+          <Route
             exact
             path='/chat/:chatPartner'
             component={MessagePage}
