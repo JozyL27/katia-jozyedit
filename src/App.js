@@ -9,6 +9,7 @@ import Profile from './components/Profile/Profile'
 import Matches from './components/Matches/Matches'
 import MessagePage from './routes/MessagePage/MessagePage'
 import PrivateRoute from '../src/Utils/PrivateRoute'
+import PublicOnlyRoute from '../src/Utils/PublicOnlyRoute'
 import './App.css'
 
 class App extends Component {
@@ -24,17 +25,17 @@ class App extends Component {
     return (
       <div className="App">
         <Switch>
-          <Route
+          <PublicOnlyRoute
             exact
             path='/'
             component={LandingRoute}
           />
-          <Route 
+          <PublicOnlyRoute
             exact
             path='/login'
             component={LoginPage}
           />
-          <Route
+          <PublicOnlyRoute
             exact
             path='/signup'
             component={SignupPage}
