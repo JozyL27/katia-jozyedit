@@ -159,9 +159,10 @@
 }
 
 .profile__imageEditInput {
-    display: flex;
+    /* display: flex;
     align-items: center;
     margin: 0 auto;
+    flex-direction: column; */
 }
 
 .profile__file-upload {
@@ -172,7 +173,9 @@
 
 .profile__imageEditInput > .profile__ImgEdit-submit {
     font-size: 2vh;
-    padding: .6rem 1.5rem;
+    /* padding: .6rem 1.5rem; */
+    display: block;
+    margin: 10px auto 0px auto;
 }
 
 .profile__editForm > label, .profile__gamer-tags-header {
