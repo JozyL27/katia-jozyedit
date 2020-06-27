@@ -10,7 +10,6 @@ import PC_Logo from '../../images/PC_Keyboard_Mouse_Icon.png'
 import xboxLogo from '../../images/xbox_logo_png.png'
 import checkmarkSVG from '../../images/checkmark-circle-2.svg'
 import x_markSVG from '../../images/x-circle.svg'
-import down_caretSVG from '../../images/solid_caret-down.svg'
 import Queue from '../../Utils/Queue'
 import { Swipeable } from 'react-swipeable'
 import { Animate } from './mainAnimate'
@@ -105,14 +104,10 @@ export default class MainPage extends React.Component {
             <Swipeable {...handlers} className='Swipeable__div'>
                 <Animate>
                 <div className='main__Swipe-User' onClick={this.toggleExpanded} aria-live='polite'>
-                    {/* <section className='minViewInfo'>
-                    {this.state.expanded ? (<img src={user.avatar} alt='avatar' 
-                    className='main__Image main__hidden-img' />) : 
-                    (<img src={user.avatar} alt='avatar' className='main__Image' />)}
-                    </section> */}
+
                     {!this.state.expanded ? 
-                    <section className='minViewInfo' style={{backgroundImage: `url(${user.avatar})`}}>
-                    </section> : null}
+                    <div className='minViewInfo' style={{backgroundImage: `url(${user.avatar})`}}>
+                    </div> : null}
                     <section className='main__bottom-card'>
                         <h3 className='main__display-name'>{user.display_name}</h3>
                         <h4 className='main__card-header'>Platforms</h4>
@@ -140,11 +135,6 @@ export default class MainPage extends React.Component {
                             :
                             (<><h4 className='main__card-header main__hidden-text'>Bio</h4>
                             <p className='main__bio main__hidden-text'>{user.bio}</p></>)}
-
-                            {/* carrot svg */}
-                            {/* <div className='main__caret-container'>
-                            <input className={`main__down-caret${this.state.expanded ? ' reverse' : ''}`} type="image" src={down_caretSVG} alt='down-caret' />
-                            </div> */}
 
                     </section>
                 </div>

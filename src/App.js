@@ -5,9 +5,11 @@ import LandingRoute from './routes/LandingRoute/LandingRoute'
 import SignupPage from './routes/SignupPage/SignupPage'
 import NotFoundPage from './routes/NotFoundPage/NotFoundPage'
 import LoginPage from './routes/LoginPage/LoginPage'
-import Profile from './components/Profile/Profile';
-import Matches from './components/Matches/Matches';
-import MessagePage from './routes/MessagePage/MessagePage';
+import Profile from './components/Profile/Profile'
+import Matches from './components/Matches/Matches'
+import MessagePage from './routes/MessagePage/MessagePage'
+import PrivateRoute from '../src/Utils/PrivateRoute'
+import PublicOnlyRoute from '../src/Utils/PublicOnlyRoute'
 import './App.css'
 
 class App extends Component {
@@ -23,37 +25,37 @@ class App extends Component {
     return (
       <div className="App">
         <Switch>
-          <Route
+          <PublicOnlyRoute
             exact
             path='/'
             component={LandingRoute}
           />
-          <Route 
+          <PublicOnlyRoute
             exact
             path='/login'
             component={LoginPage}
           />
-          <Route
+          <PublicOnlyRoute
             exact
             path='/signup'
             component={SignupPage}
           />
-          <Route
+          <PrivateRoute
             exact
             path='/swipe'
             component={MainPage}
           />
-          <Route
+          <PrivateRoute
             exact
             path='/profile'
             component={Profile}
           />
-          <Route
+          <PrivateRoute
             exact 
             path='/matches'
             component={Matches}
           />
-          <Route
+          <PrivateRoute
             exact
             path='/chat/:chatPartner'
             component={MessagePage}

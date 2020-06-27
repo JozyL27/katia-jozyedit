@@ -8,7 +8,11 @@ export default class Login extends Component {
     onLoginSuccess: () => {}
   }
 
-  state = { error: null }
+  state = { error: null, loading: false }
+
+  componentDidMount() {
+    this.setState({loading: false})
+  }
 
   handleSubmitJwtAuth = ev => {
     ev.preventDefault()
@@ -29,6 +33,10 @@ export default class Login extends Component {
       })
   }
 
+  componentWillUnmount() {
+    this.setState({loading: false})
+  }
+
   render() {
     return (
       <>
@@ -36,6 +44,9 @@ export default class Login extends Component {
         <div className='lp__logoContainer'>
         <Link to='/' className='lp__lp-link'>Katia</Link>
         </div>
+        {this.state.loading ? <div className="lds-roller"><div></div><div></div>
+          <div></div><div></div><div></div><div>
+          </div><div></div><div></div></div> :
         <section className='Login__container'>
           <h2 className='Login__header'>Login</h2>
           <form
@@ -76,7 +87,7 @@ export default class Login extends Component {
               <Link className='Login__signup-link' to='/signup'>Sign Up</Link>
             </div>
           </form>
-        </section>
+        </section> }
       </main>
       </>
     )
