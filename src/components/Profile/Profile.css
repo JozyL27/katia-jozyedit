@@ -10,7 +10,7 @@
 }
 
 .profile__back-icon, .profile__edit-icon {
-    height: 5vh;
+    height: 4vh;
     max-height: 5rem;
 }
 
@@ -27,7 +27,6 @@
     margin: 0 auto;
     border-radius: 2.5vh;
     background-color: white;
-    /* box-shadow: .5rem 1rem 1.8rem #888888; */
 }
 
 .profile__section > * {
@@ -42,7 +41,6 @@
     align-items: center;
     border-radius: 2.5vh;
     background-color: white;
-    /* box-shadow: .5rem 1rem 1.8rem #888888; */
 }
 
 .profile__img-container {
@@ -71,17 +69,18 @@
     width: 100%;
     height: 5.5vh;
     text-align: left;
-    padding: .7vh 2vh;
+    padding: 1.3vh;
     font-size: 2.5vh;
     font-weight: bold;
     margin: 1vh 0;
     text-align: center;
     border: none;
-    border-bottom: .3rem solid lightgray;
-    width: 75%;
+    border-bottom: .1rem solid lightgray;
+    width: 70%;
+    color: grey;
 }
 
-.profile__genres, .profile__gamer-tags {
+.profile__genres, .profile__gamer-tags, .lfm-in {
     text-align: center;
     font-size: 2.2vh;
 }
@@ -216,8 +215,7 @@
 
 #platforms {
     display: flex;
-    justify-content: space-around;
-    margin: 0;
+    justify-content: space-evenly;
     padding: 1.4vh 0;
     width: 100%;
     margin: 0 auto;
@@ -325,7 +323,7 @@
     }
 
     .profile__back-icon, .profile__edit-icon {
-        height: 7vh;
+        height: 5vh;
         max-height: 5rem;
     }
 }
