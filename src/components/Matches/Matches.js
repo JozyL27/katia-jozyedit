@@ -6,10 +6,10 @@ import nintendoLogo from '../../images/nintendo_logo.png'
 import playstationLogo from '../../images/playstation_color_png.png'
 import PC_Logo from '../../images/PC_Keyboard_Mouse_Icon.png'
 import xboxLogo from '../../images/xbox_logo_png.png'
-import mail_icon from '../../images/mail.svg'
 import unmatch_icon from '../../images/x-circle.svg';
 import MatchesService from '../../services/matches-service'
 import backArrow from '../../images/left-arrow-svgrepo-com.svg'
+import modernMsg2 from '../../images/message-svgrepo-com.svg'
 
 import ConfirmDialog from '../Confirm/ConfirmDialog'
 import customConfirm from '../../Utils/CustomConfirm'
@@ -72,7 +72,7 @@ export default class Matches extends React.Component {
                     <img src={user.avatar} alt='avatar' className='matches__avatar'></img>
                     <div className='matches__controls'>
                         <Link to={`/chat/${user.user_id}`} className='matches__Link'>
-                            <img className='matches__mail-icon' src={mail_icon} alt='chat-icon' />
+                            <img className='matches__mail-icon' src={modernMsg2} alt='chat-icon' />
                         </Link>
                         <img className='matches__unmatch-icon' src={unmatch_icon} alt='unmatch-icon' onClick={(e) => this.handleMatchDelete(e, user.user_id)} />
                     </div>
