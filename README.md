@@ -72,4 +72,4 @@
 
     - Heroku & Vercel
 
-# Site:  https://katia.now.sh/
+# Site:  https://katia-jozyedit.vercel.app/
