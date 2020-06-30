@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import {Link} from 'react-router-dom'
-import TokenService from '../../services/token-service'
 import AuthService from '../../services/auth-api-service'
 import './Signup.css'
 
@@ -10,6 +9,10 @@ export default class Signup extends Component {
   }
 
   state = { error: null }
+
+  componentDidMount() {
+    this.setState({ error: null })
+  }
 
   handleSubmit = ev => {
     ev.preventDefault()
@@ -23,18 +26,10 @@ export default class Signup extends Component {
     if(password.value === confirm_password.value) {
     AuthService.registerUser(user)
       .then(() => {
-        AuthService.postLogin({
-          email: email.value.toLowerCase().trim(),
-          password: password.value
-        })
-          .then(res => {
             email.value = ''
             display_name.value = ''
             password.value = ''
-            TokenService.saveAuthToken(res.authToken)
-            this.props.onRegistrationSuccess(user.user_name)
-          })
-          .catch(error => this.setState({error: error.message}))
+            this.props.onRegistrationSuccess()
       })
       .catch(res => {
         this.setState({ error: res.error })
@@ -42,6 +37,10 @@ export default class Signup extends Component {
     } else if(password.value !== confirm_password.value) {
       this.setState({ error: 'passwords did not match' })
     }
+  }
+
+  componentWillUnmount() {
+    this.setState({ error: null })
   }
 
   render() {
